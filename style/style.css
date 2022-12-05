@@ -10,6 +10,7 @@ body{
   width: 100%;
   position: fixed;
   margin-top: 4rem;
+  z-index: 22;
   padding-bottom: 3px;
 }
 .header{
@@ -18,6 +19,7 @@ body{
   margin-right: auto;
   width: 100vw;
   background-color: black;
+  z-index: 22;
 }
 .topnav{
   float: right;
@@ -39,14 +41,6 @@ body{
 .portfolio_link:hover {
   transform: scale(1.1);
 }
-.display_grid{
-  width:10rem;
-  height:10rem;
-  display:grid;
-  grid-row: auto auto;
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
-}
 .header_format{
   color:white; 
   float:left;
@@ -55,4 +49,42 @@ body{
   font-size:  2rem;
   margin-top: .5rem;
   margin-left: 1rem;
+}
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+.box:hover{
+  transform: scale(1.1);
+}
+.boxthing {
+  position: relative;
+}
+.boxthing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px; 
+  padding: 10px; 
+  background:linear-gradient(45deg,#3399ff,#000099); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
 }
