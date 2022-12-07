@@ -3,7 +3,14 @@
   padding: 0;
   }
 body{
-  background-color: rgb(3, 3, 2, 255);
+  /* background-color: rgb(3, 3, 2, 255); */
+  background-color: rgb(255, 255, 255, 255);
+}
+.h1t {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#3399ff, #000099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .border{
   background-image: linear-gradient(270deg, #3399ff, #0099ff 27%, #0066ff 50%, #0033cc 75%, #000099);
@@ -11,23 +18,25 @@ body{
   position: fixed;
   margin-top: 4rem;
   z-index: 22;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 .header{
   height: 4rem;
   position: fixed;
   margin-right: auto;
   width: 100vw;
-  background-color: black;
+  background-color: white;
   z-index: 22;
+  font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
 .topnav{
   float: right;
   margin-right: 1rem;
+  font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
 .topnav a {
   z-index: 9;
-  color: #f2f4f3;
+  color: black;
   padding: 20px 16px;
   text-decoration: none;
   display:inline-block;
@@ -42,7 +51,7 @@ body{
   transform: scale(1.1);
 }
 .header_format{
-  color:white; 
+  color:black; 
   float:left;
   font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
   font-style: normal;
@@ -71,9 +80,11 @@ body{
 .box { margin: 20px; }
 .box:hover{
   transform: scale(1.1);
+  transition: transform .2s;
 }
 .boxthing {
   position: relative;
+  font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
 .boxthing::before {
   content: "";
