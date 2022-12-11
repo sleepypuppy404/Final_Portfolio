@@ -2,102 +2,86 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cleanup.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <body>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <div class="header">
-        <div class="header_format" >SleepyPuppy404</div>
+        <div class="header_format">SleepyPuppy404</div>
           <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="#news">Assignments</a>
+            <a href="#projects">Projects</a>
           </div>
         </div>
       </div>
-      <h1 class="border"></h1>
-      <div style="display: flex;justify-content: center; padding-top: 10vh;">
-        <p style="color: black; font-size: 15vh; width: 50%; z-index: 2; font-family: DM Sans, sans-serif">
-          SleepyPuppy404 <br>
-          A guy <br>
-          doing stuff <br>
-          for a class 
-        </p>
-        <img src="puppy.jpeg" style="width: 39%; height: auto; z-index: -10; margin-top: 20vh;">
+      <div style="height: 60vh; background-color: #3CD2F9" id = "home">
+        <div class="spacing" style="height: 30vh;"></div>
+        <div class="intro" style="align-items: center; width: 49%; margin-left: 15%; color: white; font-family: DM Sans, sans-serif">
+           <!--Note to self. Clean up these animations later.-->
+          <h1 style="padding-bottom: 1%">I'm SleepyPuppy404</h1>
+          <h2 style="margin-left: 0%;">Welcome to my Portfolio</h2>
+          <h2 style="margin-left: 0%;">I'm passionate about AI and UIUX</h2>
+        </div>
       </div>
-      <br><br><br><br><br><br>
-      <h1 style="color: black; text-align: center; font-size: 12vh;" data-aos="fade-in">Projects</h1>
-      <br>
-      <div style="color: black; height: 50%; text-align: center; display: flex; width: 90%; margin-left: 5%;" data-aos="fade-in" class="boxthing">
-        <div style="text-align: left; display: inline-block; margin-left: 10%;">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h2 style="z-index: 3; font-size: 4vh">Responsive Redesign</h2>
-          <p style="font-size: 2.5vh;">I spent time making a responsive redesign of a local buisness's website: Bagel Gourmet Cafe
-            Click on the image above to go visit the redesign!
+      <div style="height: 30vh; background-image: linear-gradient(#3CD2F9, white);"></div>
+      <div class="spacing" style="height: 20vh;" id = "projects"></div>
+      <h1 style="color: black; text-align: center; font-size: 12vh; font-family: DM Sans, sans-serif;" data-aos="fade-in">Projects</h1>
+      <div class="spacing" style="height: 10vh;"></div>
+      <div data-aos="fade-left" style="display: flex; width: 70%; margin-left: 15%;">
+        <img class = "portfolio_link" src="images/homepage/bagel_intro.png"></img>
+        <div style="margin-top: 1%; display: flex; justify-content: center; flex-wrap: wrap;">
+          <h1 style="font-size: 4vh; font-family: DM Sans, sans-serif">Responsive Redesign</h1>
+          <p class = "link_par">
+            I spent time making a responsive redesign of a local buisness's website: Bagel Gourmet Cafe
+            Click on the image or the button below to go visit the redesign!
           </p>
-        </div>
-        <div class="box" style="padding-top: 1.5vh; padding-bottom: 1.5vh; display: inline-block;" onclick="location.href='Responsive_Redesign.html';">
-          <img src="images/redesign/bagel_sandwich.webp" style="width: 50%; border-radius: 25px; z-index: 2">
+          <br>
+          <button class="btn" onclick="window.location.href='Responsive_Redesign.html'">Visit Me!</button>
         </div>
       </div>
-      <div style="color: black; height: 50vh; text-align: center; display: flex; width: 90%; margin-left: 5%;" data-aos="fade-in" class="boxthing">
-        <div style="text-align: left; display: inline-block; margin-left: 10%;">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h2 style="z-index: 3; font-size: 4vh">React App</h2>
-          <p style="font-size: 2.5vh; width: 50%;">Due to my love for dogs, as well as my family's plans to get a new dog, I decided to do research on the pets.
-            Afterwards, I put together this react app to help families plan dog adoptions. Click to the right of this text to learn more about it.
+      <div class="spacing" style="height: 10vh;"></div>
+      <div data-aos="fade-right" style="display: flex; width: 70%; margin-left: 10%;">
+        <div style="margin-top: -1%; display: flex; justify-content: center; flex-wrap: wrap;">
+          <h1 style="font-size: 4vh; font-family: DM Sans, sans-serif; padding: 1%; margin-left: 10%; margin-right: 10%;">Iterative Design</h1>
+          <p class="link_par">
+            Working with a group, I developed a prototype of the product of a YCombinator Startup, Knowtex. The product
+            we created was a voice recognition note taking software for doctors.
           </p>
+          <br>
+          <button class="btn">Visit Me!</button>
         </div>
-        <div class="box" style=" padding-top: 1.5vh; padding-bottom: 1.5vh; display: inline-block;" onclick="location.href='React.html';">
-          <img src="images/redesign/puppy_drawing.png" style="width: 90%; border-radius: 25px; z-index: 2; margin-left: -80%;">
-        </div>
+        <img class = "portfolio_link" src="images/homepage/knowtex.png"></img>
       </div>
-      <div style="color: black; height: 50%; text-align: center; display: flex; width: 90%; margin-left: 5%;" data-aos="fade-in" class="boxthing">
-        <div style="text-align: left; display: inline-block; margin-left: 10%; padding-bottom:5vh">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h2 style="z-index: 3; font-size: 4vh">Iterative Design</h2>
-          <p style="font-size: 2.5vh; width: 50%;">I spent time making a responsive redesign of a local buisness's website: Bagel Gourmet Cafe
-            Click on the image to go visit the redesign!
+      <div class="spacing" style="height: 10vh;"></div>
+      <div data-aos="fade-left" style="display: flex; width: 70%; margin-right: 15%; margin-left: 15%;">
+        <img class = "portfolio_link" src="images/homepage/personas.png"></img>
+        <div style="margin-top: 1%; display: flex; justify-content: center; flex-wrap: wrap;">
+          <h1 style="font-size: 4vh; font-family: DM Sans, sans-serif; margin-left: 40%; margin-right: 40%;">Personas</h1>
+          <p class="link_par">
+            In order to better familiarize myself with the process of user oriented design, I developed user personas for an ice cream machine.
           </p>
-        </div>
-        <div class="box" style="padding-top: 3vh; padding-bottom: 1.5vh; display: inline-block;" onclick="location.href='Responsive_Redesign.html';">
-          <img src="knowtex.avif" style="width: 200%; border-radius: 25px; z-index: 2; margin-left: -300%;">
+          <br>
+          <button class="btn">Visit Me!</button>
         </div>
       </div>
-      <div style="color: black; height: 50%; text-align: center; display: flex; width: 90%; margin-left: 5%;" class="boxthing">
-        <div style="text-align: left; display: inline-block; margin-left: 10%; padding-bottom:5vh;">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h2 style="z-index: 3; font-size: 4vh">Iterative Design</h2>
-          <p style="font-size: 2.5vh; width: 50%;">I spent time making a responsive redesign of a local buisness's website: Bagel Gourmet Cafe
-            Click on the image above to go visit the redesign!
+      <div class="spacing" style="height: 10vh;"></div>
+      <div data-aos="fade-right" style="display: flex; width: 70%; margin-left: 8%;">
+        <div style="margin-top: 1%; display: flex; justify-content: center; flex-wrap: wrap;">
+          <h1 style="font-size: 4vh; font-family: DM Sans, sans-serif; padding: 1%; margin-left: 10%; margin-right: 10%;">React App</h1>
+          <p class="link_par">
+            In order to help people adopt dogs, and to get experience with React, I developed a puppy family development app,
+            that provided and aggregated information on dogs and helped potential dog owners get a sense as to the work required to own a specific dog.
           </p>
+          <br>
+          <button class="btn">Visit Me!</button>
         </div>
-        <div class="box" style= "padding-top: -1.5vh; padding-bottom: 1.5vh; display: inline-block;" onclick="location.href='Responsive_Redesign.html';">
-          <img src="knowtex.avif" style="width: 200%; border-radius: 25px; z-index: 2; margin-left: -300%;">
-        </div>
+        <img class = "portfolio_link" src="images/homepage/react_app.png"></img>
       </div>
-      <!-- </div> -->
-      <br><br><br><br><br><br><br><br>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <div class="spacing" style="height: 10vh;"></div>
       <script>
         AOS.init();
       </script>
-      </body>
+    </body>
         
 </html> 
 
