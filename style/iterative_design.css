@@ -22,13 +22,13 @@
   font-size: 8vh;
   font-family: DM Sans, sans-serif;
   padding-bottom: 2vh;
-  color: #503225;
+  color: #6e2881;
 }
 .boxthing h2{
   font-size: 6vh;
   font-family: DM Sans, sans-serif;
   padding-bottom: 2vh;
-  color: #503225;
+  color: #6e2881;
   font-weight: 400;
 }
 .intro h2 {
@@ -102,7 +102,7 @@
     margin-right: auto;
     width: 100vw;
     color: white;
-    background: -webkit-linear-gradient(#422315, #503225);
+    background: -webkit-linear-gradient(#61277a, #6e2881);
     z-index: 22;
     font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
     padding-top: .5%;
@@ -137,5 +137,9 @@
   }
   .box:hover{
     transform: scale(1.1);
+    transition: transform .2s;
+  }
+  .img_h:hover{
+    transform: scale(2);
     transition: transform .2s;
   }
