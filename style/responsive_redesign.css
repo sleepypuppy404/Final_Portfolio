@@ -97,7 +97,7 @@
     background-color:#3399ff;
 }
 .header{
-    height: 4rem;
+    height: 6vh;
     position: fixed;
     margin-right: auto;
     width: 100vw;
@@ -120,7 +120,9 @@
     text-decoration: none;
     display:inline-block;
     height:2vh;
-    font-size: 1.5rem;
+    margin-top: .3vh;
+    font-size: 2.5vh;
+    margin-right: 3.2vh;
   }
   .topnav a:hover {
     z-index: 9;
@@ -131,9 +133,9 @@
     float:left;
     font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
     font-style: normal;
-    font-size:  2rem;
-    margin-top: .5rem;
-    margin-left: 1rem;
+    font-size:  3vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
   }
   .box:hover{
     transform: scale(1.1);

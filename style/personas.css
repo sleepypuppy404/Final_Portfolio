@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+  body{
+    /* background-color: rgb(3, 3, 2, 255); */
+    background-color: rgb(255, 255, 255, 255);
+  }
+/* Inspired by: https://css-tricks.com/snippets/css/typewriter-effect/ */
+.intro h1 {
+    overflow: hidden; 
+    border-right: .3vw solid transparent;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    font-size: 10vh;
+    animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end 4;
+}
+.boxthing h1{
+  text-align: center; 
+  font-size: 8vh;
+  font-family: DM Sans, sans-serif;
+  padding-bottom: 2vh;
+  color: #476A6F;
+}
+.boxthing h2{
+  font-size: 6vh;
+  font-family: DM Sans, sans-serif;
+  padding-bottom: 2vh;
+  color: #476A6F;
+  font-weight: 400;
+}
+.intro h2 {
+    width: 0;
+    overflow: hidden; 
+    border-right: .3vw solid transparent;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    font-size: 5vh;
+    font-weight: 200;
+    animation:
+        typing2 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+        font-size: 5vh;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+  /* The typing effect */
+@keyframes reset {
+    from {width: 100%}
+    to {width: 0}
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes typing2 {
+    from { width: 0 }
+    to { width: 80% }
+}
+@keyframes blink-caret {
+    from, to { border-color: white; }
+    50% { border-color: transparent }
+    
+}
+.link_par {
+    font-size: 2.5vh; width: 50%; font-family: DM Sans, sans-serif; text-align: center; padding: 3%;
+}
+.portfolio_link:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+  }
+  .portfolio_link {
+    width: 50vw;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+  .btn {
+    border-color: transparent;
+    border-radius: 7px;
+    background-color: #3CD2F9;
+    color: white;
+    padding: 14px 28px;
+    font-size: 3vh;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40%; 
+    margin-left: 30%; 
+    margin-right: 30%;
+  }
+  
+  .btn:hover {
+    background-color:#3399ff;
+}
+.header{
+    height: 6vh;
+    position: fixed;
+    margin-right: auto;
+    width: 100vw;
+    color: white;
+    background: -webkit-linear-gradient(#2e484d, #476A6F);
+    z-index: 22;
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    padding-top: .5%;
+    padding-bottom: .5%;
+  }
+  .topnav{
+    float: right;
+    margin-right: 1rem;
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+  }
+  .topnav a {
+    z-index: 9;
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    display:inline-block;
+    height:2vh;
+    margin-top: -.3vh;
+    font-size: 2.5vh;
+    margin-right: 2vh;
+  }
+  .topnav a:hover {
+    z-index: 9;
+    color: #5d6360;
+  }
+  .header_format{
+    color:white; 
+    float:left;
+    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style: normal;
+    font-size:  3vh;
+    margin-top: 1vh;
+    margin-left: 2vh;
+  }
+  .box:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+  }
