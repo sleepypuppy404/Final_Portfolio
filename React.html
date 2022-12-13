@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>SleepyPuppy404 Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/react.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -140,11 +141,15 @@
         <h2 style="margin-top: 5vh;">Filtering/Sorting System</h2>
         <div style="color: black; font-family: DM Sans, sans-serif; color: white; font-size: 3vh; width: 80%; margin: auto; margin-bottom: 7vh; text-align: left; background-color: #661117; border-radius: 10px; padding: 1%;">
           <div style="border-radius: 10px; padding: 4%; border: 10px solid white;">
-            The next part of the design was to actually consider a method to narrow down the options available to the user.
+            Next came a method to narrow down the options available to the user.
             In order to make this easier, I added the option to sort (based on the cateogires of Friendliness, Activity, and Price due to research)
             and to filter (Based on Price and on Breed type, which while not as important during research, came up a lot).
             These components (shown below) were implemented using basic React functionality, changing state variables and then applying
             filters/sorting methodlogies based on what these state variables were.
+            <br>
+            One additional design consideration I made here were cases in which a range might be preferably to an absolute. Specifically, with price.
+            Since some families might have a range of acceptable prices rather than a single one, I thought it would be better to utilize a slider 
+            rather than a signular value to allow for selection of dog cost.
           </div>
         </div>
         <img src="images/react/sorting system.png" style="border: 15px #661117 solid; border-radius: 15px;">
